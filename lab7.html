@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7</title>
+</head>
+
+<body onLoad="myName()">
+    <p id="name"></p>
+    <button onclick="birth()">Дата народження</button>
+    <button onclick="calculate()">Обрахувати</button>
+    <hr />
+    <img src="zavd.jpg" alt="" />
+    <script>
+        function myName() {
+            document.getElementById("name").innerHTML =
+                "Романчук Сергій Володимирович";
+        }
+
+        function birth() {
+            alert("17.02.1998\nНародився в місті Хмельницькому");
+        }
+
+        function calculate() {
+            var x = parseInt(prompt("X", "1"));
+            var y = parseInt(prompt("Y", "1"));
+            var z = parseInt(prompt("Z", "1"));
+            result = 1 / (x + y + z);
+            alert("Результат: " + result);
+        }
+    </script>
+</body>
+
+</html>
